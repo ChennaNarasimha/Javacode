@@ -13,7 +13,7 @@ public class Main {
 			int entry=sc.nextInt();
 			switch(entry) {
 			case 1:
-				   System.out.println("Enter Number of Elements to Enqueue the                      					Queue: ");
+				   System.out.println("Enter Number of Elements to Enqueue the 	Queue: ");
 				   int enq=sc.nextInt();
 				   for(int i=0;i<enq;i++) {
 					System.out.println("Enter Element "+(i+1)+" to Enqueue: ");
