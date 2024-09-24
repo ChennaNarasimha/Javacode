@@ -1,7 +1,5 @@
-
-package com.LinkedList;
-
-public class Node<T> {
+//Create a Package like com.LinkedList and then create this classes seperately
+class Node<T> {
 	
 	private T data;
 	private Node<T> next;
@@ -24,7 +22,7 @@ public class Node<T> {
 	}
 }
 
-public class LinkedList<T extends Comparable <T>> {
+class LinkedList<T extends Comparable <T>> {
 
 	public Node<T> head;
 	public LinkedList() {
