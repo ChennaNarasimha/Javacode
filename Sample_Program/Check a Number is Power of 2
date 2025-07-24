@@ -1,0 +1,21 @@
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+     if(n==1) return true;
+     if(n%2!=0) return false;
+     int result=1;
+     for(int i=1;i<=n/2;i=i*2){
+        result=2*i;
+        if(result==n){
+            return true;
+        }
+     }
+     return false;     
+    }
+}
+/*
+if(n<=0) return false;
+while(n%2==0){
+    n=n/2;
+}
+return (n==1);
+*/
