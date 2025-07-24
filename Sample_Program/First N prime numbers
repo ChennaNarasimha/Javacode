@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Solution{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number of Primes you want to see: ");
+        int number=sc.nextInt();
+        int startNumber=2;
+        int index=0;
+        while(index<number){
+            if(isPrime(startNumber)){
+                System.out.print(startNumber+" ");
+                index++;
+            }
+            startNumber++;
+        }
+      
+    }
+    static boolean isPrime(int num){
+            if(num<=1) return false;
+            for(int i=2;i*i<=num;i++){
+            if(num%i==0) return false;
+            }
+            return true;
+        }
+}
+
